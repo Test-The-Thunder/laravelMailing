@@ -14,9 +14,10 @@ class mailingController extends Controller
         for ($i=0; $i < sizeof($rows[0]); $i++) {
             $mailData = new \stdClass();
             $mailData=array(
-                'email' => $rows[0][$i][0],
+                'name' => $rows[0][$i][0],
+                'email' => $rows[0][$i][1],
             );
-            Mail::to($rows[0][$i][0])->send(new bulkMail($mailData));
+            Mail::to($rows[0][$i][1])->send(new bulkMail($mailData));
         }
         return view('home');
     }

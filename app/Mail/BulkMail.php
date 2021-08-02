@@ -28,6 +28,6 @@ class BulkMail extends Mailable implements ShouldQueue
      */
     public function build()
     {
-        return $this->subject("Use Technology To Grow Your Business")->markdown('emails.mail');
+        return $this->subject("Build your own website today.")->markdown('emails.websitePlans');
     }
 }

@@ -6,4 +6,5 @@
 Project is to explain how to create a marketting mailing system in laravel for bulk mailing.
 project also contains fully responsive layout for mails (created through HTML).
 
-
+Mailing will be done using your gmail account
+Excel upload available
